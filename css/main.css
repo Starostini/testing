@@ -213,6 +213,9 @@ a {
   padding: 11px 53px;
   border: 1px solid #e2ab3f; }
 
+.slick-slide img {
+  max-width: 100%; }
+
 .hotel__title span {
   margin-left: 120px; }
 
@@ -327,7 +330,8 @@ a {
   height: 100vh;
   background-repeat: no-repeat;
   background-position: bottom center;
-  padding-top: 96px; }
+  padding-top: 96px;
+  background-size: cover; }
   .footer__inner {
     display: flex;
     justify-content: space-between;
@@ -347,6 +351,152 @@ a {
       font-size: 86px;
       line-height: 115px;
       color: #e2ab3f;
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      padding-top: 50px; }
+  .footer__phone, .footer__email {
+    display: inline-block;
+    padding-left: 40px;
+    position: relative; }
+    .footer__phone::before, .footer__email::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: 0;
+      top: -5px; }
+  .footer__phone {
+    margin-bottom: 20px; }
+    .footer__phone::before {
+      background-image: url(../images/footer-phone-icon.svg); }
+  .footer__email::before {
+    background-image: url(../images/footer-email-icon.svg); }
+  .footer__social {
+    margin-top: 38px; }
+    .footer__social a {
+      margin: 0 7px; }
+
+@media (max-width: 1640px) {
+  .our-trip .slick-track {
+    margin-top: 150px; }
+  .our-trip .slick-btn {
+    top: 67%; } }
+
+@media (max-width: 1240px) {
+  .header__title {
+    font-size: 180px;
+    padding-top: 120px;
+    line-height: 220px; }
+    .header__title span {
+      font-size: 50px;
+      margin-top: -50px; }
+  .our-trip .slick-track {
+    margin-top: 250px; }
+  .hotel__content {
+    margin-left: 50px; } }
+
+@media (max-width: 991px) {
+  .page-section {
+    margin: 100px 0; }
+  .fairy-tail__container,
+  .our-trip__container {
+    position: static; }
+  .fairy-tail__slider,
+  .our-trip__slider {
+    width: 100%; }
+  .fairy-tail__body,
+  .our-trip__body {
+    width: 100%;
+    padding: 0; }
+  .fairy-tail__btn,
+  .our-trip__btn {
+    margin: 30px 0; }
+  .fairy-tail__content,
+  .our-trip__content {
+    padding-right: 0;
+    width: 100%; }
+  .fairy-tail__item img,
+  .our-trip__item img {
+    width: 100%;
+    object-fit: cover; }
+  .our-trip .slick-track {
+    margin-top: 0; }
+  .our-trip .slick-btn {
+    top: 50%; } }
+
+@media (max-width: 840px) {
+  .header__title {
+    font-size: 120px;
+    padding-top: 100px;
+    line-height: 150px; }
+    .header__title span {
+      font-size: 30px;
+      margin-top: -44px; }
+  .header__top {
+    font-size: 20px;
+    line-height: 24px; }
+  .header__phone::before {
+    width: 25px;
+    height: 25px;
+    background-size: cover; } }
+
+@media (max-width: 600px) {
+  .header__top {
+    justify-content: center;
+    flex-wrap: wrap; }
+  .header__title {
+    font-size: 80px;
+    line-height: 120px; }
+    .header__title span {
+      font-size: 22px;
+      margin-top: -46px;
+      margin-right: 15px; }
+  .menu {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 25px; }
+  .fairy-tail__item img {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover; }
+  .page-section {
+    margin: 50px 0; }
+  .title {
+    margin-bottom: 25px;
+    font-size: 60px;
+    line-height: 110px; }
+  .fairy-tail__title span {
+    margin-left: 120px;
+    font-size: 17px;
+    margin-top: -40px; }
+  .our-trip__title span {
+    margin-left: 155px;
+    font-size: 17px;
+    margin-top: -35px; } }
+
+@media (max-width: 370px) {
+  .header__top {
+    justify-content: center;
+    flex-wrap: wrap; }
+  .header__title {
+    font-size: 60px;
+    line-height: 100px; }
+    .header__title span {
+      font-size: 18px;
+      margin-top: -46px;
+      margin-right: 0; }
+  .menu__list-item + .menu__list-item {
+    margin-left: 18px; }
+  .title {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 0; }
+  .fairy-tail__title span {
+    font-size: 17px;
+    margin-left: 95px;
+    margin-top: -20px; }
+  .our-trip__title span {
+    font-size: 20px;
+    margin-left: 130px;
+    margin-top: -15px; } }
 
 /*# sourceMappingURL=main.css.map */
