@@ -450,7 +450,41 @@ a {
         margin-top: 250px;
     }
     .hotel__content {
-        margin-left: 50px;
+        margin: 15px 50px;
+    }
+    .hotel__inner {
+        display: block;
+        & a {
+            display: block;
+            text-align: center;
+            & img {
+                width: 100%;
+            }
+        }
+    }
+    .hotel .container {
+        padding: 0;
+    }
+    .hotel__title {
+        padding-left: 15px;
+    }
+    .hotel__gallery {
+        margin-top: 0;
+        justify-content: space-around;
+        & a {
+            margin: 15px 45px;
+        }
+    }
+}
+@media (max-width: 1045px) {
+    .contacts__inner,
+    .contacts__content {
+        display: block;
+        text-align: center;
+    }
+    .contacts__image {
+        margin-top: 30px;
+        max-width: 100%;
     }
 }
 @media (max-width: 991px) {
@@ -489,6 +523,12 @@ a {
             top: 50%;
         }
     }
+    .footer__inner {
+        flex-direction: column;
+    }
+    .footer__text {
+        margin-top: 50px;
+    }
 }
 @media (max-width: 840px) {
     .header {
@@ -511,6 +551,12 @@ a {
             background-size: cover;
         }
     }
+    .hotel__gallery {
+        display: block;
+    }
+    .footer__text {
+        font-size: 65px;
+    }
 }
 @media (max-width: 600px) {
     .header {
@@ -527,6 +573,27 @@ a {
                 margin-right: 15px;
             }
         }
+    }
+    .contacts__date,
+    .contacts__price {
+        font-size: 60px;
+        & span {
+            font-size: 15px;
+            margin-top: -27px;
+            margin-left: 110px;
+        }
+    }
+    .price__inner {
+        display: block;
+    }
+    .price__on {
+        max-width: 100%;
+    }
+    .hotel__content {
+        margin: 15px 15px;
+    }
+    .hotel__gallery a {
+        margin: 15px 15px;
     }
     .menu {
         width: 100%;
@@ -556,6 +623,33 @@ a {
         font-size: 17px;
         margin-top: -35px;
     }
+    .contacts__form-title {
+        font-size: 15px;
+    }
+    .contacts__form-input {
+        height: 35px;
+        padding: 0 20px;
+    }
+    .contacts__form-btn {
+        padding: 5px 35px;
+        font-size: 15px;
+    }
+    .footer__text {
+        font-size: 40px;
+    }
+    .footer__contacts {
+        background-size: cover;
+        width: 300px;
+        height: 443px;
+    }
+    .footer__contacts-title {
+        font-size: 60px;
+        line-height: 75px;
+        margin-bottom: 25px;
+    }
+    .footer {
+        height: 100%;
+    }
 }
 
 @media (max-width: 370px) {
@@ -581,7 +675,12 @@ a {
         font-size: 50px;
         line-height: 60px;
         margin-bottom: 0;
+        & span {
+            margin-left: 65px;
+            margin-top: -15px;
+        }
     }
+
     .fairy-tail__title span {
         font-size: 17px;
         margin-left: 95px;
